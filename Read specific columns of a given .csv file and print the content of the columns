@@ -1,0 +1,9 @@
+import csv
+file = open('file.csv')
+csvreader = csv.reader(file)
+n=int(input("Enter the number of Field to be printed:"))
+rows = []
+for row in csvreader:
+  rows.append(row)
+for i in range(0,len(rows)):
+  print(rows[i][n])
