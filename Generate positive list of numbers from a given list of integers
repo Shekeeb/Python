@@ -1,0 +1,8 @@
+l1=[7,-8,9,-3,6]
+l2=[]
+x=len(l1)
+print("positive integers are")
+for i in range(0,x):
+  if(l1[i]>0):
+    l2.append(l1[i])
+print(l2)
