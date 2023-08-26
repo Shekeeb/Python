@@ -1,0 +1,9 @@
+x=0
+y=1
+c=0
+n=int(input("Enter a number:"))
+for i in range(0,n):
+  print(c,end=' ')
+  x=y
+  y=c
+  c=x+y
