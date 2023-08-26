@@ -1,0 +1,19 @@
+class Rectangle:
+  def __init__(self,length,width):
+    self.__length=length
+    self.__width=width
+  def area(self):
+    area=self.__length*self.__width
+    return(area)
+  def __lt__(self,t):
+    if(self.__length * self.__width < t.__length * t.__width):
+      print("area of R1 is lowest")
+    else:
+      print("area of R2 is lowest")
+obj1=Rectangle(4,5)
+obj2=Rectangle(4,3)
+area1=obj1.area()
+print("area of R1=",area1)
+area2=obj2.area()
+print("area of R2=",area2)
+obj1<obj2
