@@ -1,0 +1,10 @@
+n=(int(input("enter the limit of integers:\n")))
+l1=[]
+print("enter the integers:")
+for i in range(0,n):
+  x=int(input())
+  if(x<100):
+    l1.append(x)
+  else:
+    l1.append("over")
+print(l1)
