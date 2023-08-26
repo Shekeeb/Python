@@ -1,0 +1,38 @@
+Co3.py:-
+from graphics.circle import*
+from graphics.rectangle import*
+from graphics.graphics3d.sphere import*
+from graphics.graphics3d.cuboid import*
+Circle(r)
+Rectangle(l,b)
+Cuboid(a)
+Sphere(r)
+
+
+Circle.py:-
+def Circle(r):
+r=int(input("Enter the radius of the cirle:"))
+print("Circle Area:",3.14*r*r)
+print("Circle Circumfrence:",2*3.14*r)
+
+
+Rectangle.py:-
+def Rectangle(l,b):
+l=int(input("Enter the length of the Rectangle:"))
+b=int(input("Enter the Breadth of the Rectangle:"))
+print("Rectangle Area:",l*b)
+print("Rectangle perimeter:",2*(l+b))
+
+
+Cuboid.py:-
+def Cuboid(a):
+s=int(input("Enter the radius of the Sphere:"))
+print("Cuboid SurfaceArea:",6*a*a)
+print("Cuboid Volume",a*a*a)
+
+
+Sphere.py:-
+def Sphere(r):
+e=int(input("Enter the Edge of the Cuboid:"))
+print("Sphere Sarfacearea:",4*3.14*r*r)
+print("Sphere Volume:",(4/3)*3.14*r*r*r)
