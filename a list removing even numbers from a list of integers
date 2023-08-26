@@ -1,0 +1,8 @@
+l1=[45,60,56,77,8]
+l2=[]
+for i in l1:
+  if(i%2==0):
+    l1.remove(i)
+  else:
+    l2.append(i)
+print(l2)
