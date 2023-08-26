@@ -1,0 +1,11 @@
+n=int(input("Enter number of elements:"))
+l1=[]
+l2=[]
+print("Enter the elements:")
+for i in range(0,n):
+  m=input()
+  l1.append(m)
+  l2.append(len(m))
+print(l1)
+print("The length of longest word is:")
+print(max(l2))
