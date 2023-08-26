@@ -1,0 +1,5 @@
+l1=['red','green','yellow','blue']
+l2=['orange','black','white','green']
+for i in l1:
+  if i not in l2:
+    print(i)
