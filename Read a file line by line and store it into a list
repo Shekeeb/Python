@@ -1,0 +1,4 @@
+filehandle=open('file.txt','r')
+x=filehandle.readlines()
+print("The lines are:",x)
+filehandle.close()
