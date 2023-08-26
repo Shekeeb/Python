@@ -1,0 +1,12 @@
+import csv
+file = open('file.csv')
+print("Heading rows are:")
+csvreader = csv.reader(file)
+header = []
+header = next(csvreader)
+print(header)
+print("Field rows are:")
+rows = []
+for row in csvreader:
+  rows.append(row)
+print(rows)
