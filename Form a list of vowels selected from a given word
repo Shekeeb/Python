@@ -1,0 +1,9 @@
+s1="india"
+l1=['a','e','i','o','u','A','E','I','O','U']
+l2=[]
+print("the word is:",s1)
+print("vowels are:")
+for i in s1:
+  if i in l1:
+    l2.append(i)
+print(l2)
