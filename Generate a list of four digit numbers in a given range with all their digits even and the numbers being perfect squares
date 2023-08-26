@@ -1,0 +1,13 @@
+import math
+a=int(input("Enter 4 digit initial number:"))
+b=int(input("Enter 4 digit limit number :"))
+for i in range (a,b+1):
+  c=i//1000
+  d=i%1000
+  e=d//100
+  f=d%100
+  g=f//10
+  h=f%10
+  s=math.sqrt(i)
+  if(c%2==0 and e%2==0 and g%2==0 and h%2==0 and float.is_integer(s) and 1000<=i<10000):
+    print(i)
