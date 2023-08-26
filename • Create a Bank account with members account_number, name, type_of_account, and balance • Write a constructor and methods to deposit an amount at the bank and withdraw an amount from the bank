@@ -1,0 +1,27 @@
+class Bank:
+  def __init__(self,acno,name,tyofac,bal):
+    self.acno=acno
+    self.name=name
+    self.tyofac=tyofac
+    self.bal=bal
+  def display(self):
+    print("Account details")
+    print("Account Number:",self.acno,"")
+    print("Name:",self.name,"")
+    print("Type of account:",self.tyofac,"")
+    print("Balance:",self.bal,"")
+  def deposite(self):
+    dep=int(input("Enter deposit amount:"))
+    self.bal=self.bal+dep
+    print(dep,"Rs deposited\nBank balance:",self.bal)
+  def withdraw(self):
+    draw=int(input("Enter withdraw amount:"))
+    if(draw>self.bal):
+      print("Balance is lessthan withdraw amount")
+    else:
+      self.bal=self.bal-draw
+      print("Withdaw Rs",draw,"\nBank balance:",self.bal)
+user1=Bank(2001,'Shekeeb','Savings',2500)
+user1.display()
+user1.deposite()
+user1.withdraw()
