@@ -1,0 +1,12 @@
+n=(int(input("enter the limit of name:\n")))
+l1=[]
+print("enter the names:")
+for i in range(0,n):
+  x=input()
+  l1.append(x)
+print(l1)
+cnt=0
+for i in l1:
+  cnt=cnt+i.count("a")
+print("total occurance of 'a' is:")
+print(cnt)
