@@ -1,0 +1,8 @@
+s=input("Enter a string:")
+m=s[-3:]
+if(m=="ing"):
+  s=s+"ly"
+  print(s)
+else:
+  s=s+"ing"
+  print(s)
