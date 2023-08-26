@@ -1,0 +1,7 @@
+a={1:"melgith",3:"shekeeb",5:"nabhan",}
+b={6:"farseen",7:"nihal",9:"subhan"}
+x=sorted(a.items())
+y=sorted(a.items(),reverse=True)
+print("sorted elements:")
+print("forward sorting:",x)
+print("reverse sorting:",y)
