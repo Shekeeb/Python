@@ -1,0 +1,28 @@
+class Rectangle:
+  def __init__(self,length,width):
+    self.length=length
+    self.width=width
+  def area(self):
+    area=self.length*self.width
+    return(area)
+  def peri(self):
+    peri=2*(self.length+self.width)
+    return(peri)
+obj1=Rectangle(4,5)
+obj2=Rectangle(4,3)
+print("Area of Rectangles:")
+area1=obj1.area()
+area2=obj2.area()
+print("Area of rectangle 1:",area1)
+print("Area of rectangle 2:",area2)
+if (area1==area2):
+  print("Areas are same")
+elif (area1>area2):
+  print("rectangle 1 is greater")
+else:
+  print("rectangle 2 is greater")
+print("Perimeter of Rectangles:")
+peri1=obj1.peri()
+peri2=obj2.peri()
+print("Perimeter of rectangle 1:",peri1)
+print("Perimeter of rectangle 2:",peri2)
