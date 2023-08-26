@@ -1,0 +1,8 @@
+s=input("Enter the string:")
+c=dict()
+for i in s:
+  if i in c:
+    c[i]+=1
+  else:
+    c[i]=1
+print(c)
