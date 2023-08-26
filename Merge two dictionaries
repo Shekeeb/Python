@@ -1,0 +1,4 @@
+a={1:"shekeeb",3:"nabhan",5:"farseen"}
+b={6:"melvin",7:"melgith",9:"subhan"}
+print("merged dictionary:")
+print(a|b)
