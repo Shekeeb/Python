@@ -1,0 +1,8 @@
+s1="united"
+l1=[]
+print("the word is:",s1)
+print("the ordinal value of each element in the word",s1,"is:")
+for i in s1:
+  x=ord(i)
+  l1.append(x)
+print(l1)
