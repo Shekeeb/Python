@@ -1,0 +1,30 @@
+l1=[3,4,7,6,4,5]
+l2=[8,7,3,9,5,3]
+print("l1=",l1)
+print("l2=",l2)
+x=len(l1)
+y=len(l2)
+if(x==y):
+  print("Length of l1 and l2 are same")
+else:
+  print("Length of l1 and l2 are different")
+suml1=sum(l1)
+suml2=sum(l2)
+print("Sum of l1 =",suml1)
+print("Sum of l2 =",suml2)
+if(suml1==suml2):
+  print("Sum of l1 and l2 are same")
+else:
+  print("Sum of l1 and l2 are different")
+l3=set(l1)
+l4=set(l2)
+l5=[]
+for i in l3:
+  for j in l4:
+    if(i==j):
+      l5.append(i)
+x=len(l5)
+if(x==0):
+  print("Common elements are not occur in both lists")
+else:
+  print("Common elements of both lists =",l5)
