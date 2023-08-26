@@ -1,0 +1,11 @@
+f1=open('file1.txt','r')
+f2=open('file2.txt','w')
+x=f1.readlines()
+j=1
+for i in range(0,len(x)):
+  if(j%2!=0):
+      f2.write(x[i])
+      print(x[i])
+    j=j+1
+f1.close()
+f2.close()
